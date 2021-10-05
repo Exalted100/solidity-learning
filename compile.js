@@ -3,7 +3,7 @@ const fs = require('fs');
 const solc = require('solc');
 
 const inboxPath = path.resolve(__dirname, 'contracts', 'inbox.sol');
-const source = fs.readFileSync(inboxPath, 'UTF-8');
+const source = fs.readFileSync(inboxPath, 'utf8');
 
 var input = {
   language: 'Solidity',
@@ -21,6 +21,4 @@ var input = {
   }
 };
 
-
 module.exports = JSON.parse(solc.compile(JSON.stringify(input))).contracts['inbox.sol'].Inbox;
-//module.exports = JSON.parse(solc.compile(JSON.stringify(input)));
