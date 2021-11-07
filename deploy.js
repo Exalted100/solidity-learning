@@ -4,7 +4,7 @@ const bytecode = require('./compile').evm.bytecode.object;
 const { abi } = require('./compile');
 
 const provider = new HDWalletProvider (
-    "right fluid employ turtle quarter scene voice wreck silver master butter legal",
+    "insert mmenomics",
     "https://rinkeby.infura.io/v3/4a6ddb668c1b4c9d83d7149055df904e"
 )
 
